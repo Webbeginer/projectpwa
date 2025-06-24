@@ -1,0 +1,41 @@
+html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+.menu-select{
+    background-color: rgb(63, 119, 119);
+    display: flex;
+    width: fit-content;;
+    padding: 10px;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+h2{
+   
+}
+select{
+    margin-left: 15px;
+
+    padding: 5px;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100px;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+}
+.car-list{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
