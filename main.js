@@ -65,10 +65,11 @@ caches.match(URL_ALL_PRODUCTS).then(function (response) {
 
 window.onload = async function () {
     const data = await getData();
-    data.products.forEach(element => {
+    const names = [...new Set(data.products.map(product => product.name))];
+    names.forEach(element => {
         const option = document.createElement("option");
-        option.value = element.name;
-        option.text = element.name;
+        option.value = element;
+        option.text = element;
         dataSelect.appendChild(option);
 
     });
